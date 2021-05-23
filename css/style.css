@@ -1,0 +1,132 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+    background: url(../images/background.png) rgba(0, 0, 0, 0.05);
+}
+
+.jumbotron {
+	width: 28.5%;
+	background-color: #fff;
+	text-align: center;
+	padding: 45px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contain{
+	width: 100%;
+	overflow: hidden;
+}
+
+.error{
+	color: #e81123;
+	font-family: Segoe UI !important;
+	font-size: 15px !important;
+	font-weight: 400 !important;
+	display: none;
+}
+
+.contain form{
+	display: flex;
+	width: 400%;
+}
+
+.contain form .page{
+	width: 25%;
+	transition: margin-left 0.3s ease-in-out;
+}
+
+/*.contain2{
+	background-color: #fff;
+	padding: 10px 50px;
+	width: 28.5%;
+	margin: auto;
+	margin-top: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}*/
+
+h3{
+	font-family: Segoe UI !important;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 28px;
+	color: #1b1b1b !important;
+	text-align: left;
+}
+
+.form-control{
+	padding-left: 0px;
+	padding-right: 0px;
+	font-family: Segoe UI;
+	font-size: 15px;
+	border-radius: 0;
+  	box-shadow: none;
+  	-webkit-box-shadow: none;
+  	border-width: 0px 0px 1px 0px;
+  	border-color: grey;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: grey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: grey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: grey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: grey;
+}
+
+.form-control:active{
+	border-radius: 0;
+  	box-shadow: none;
+  	-webkit-box-shadow: none;
+}
+
+
+.form-control:focus{
+	box-shadow: none;
+	background-color: #E8F0FE;
+}
+
+.btn{
+	font-family: Segoe UI !important;
+	border-radius: 0px;
+	float: right;
+	width: 30%;
+}
+
+p{
+	font-family: Segoe UI !important;
+	color: #1b1b1b;
+	text-align: left;
+	font-size: 13px !important;
+	font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .jumbotron {
+    min-width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .jumbotron {
+    min-width: 35% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .jumbotron {
+    min-width: 30% !important;
+  }
+}
